@@ -23,16 +23,16 @@
         onfocus="if(this.value = ''){this.value = ''}" 
         value="" id="grades" 
         placeholder="Enter A, B, C, D, E or F." 
-        oninput="this.value = this.value.toUpperCase()">
+        oninput="this.value = this.value.toUpperCase()"><br>
     <button id="save-btn" 
         onclick="saveGrades()"
         type="button"
         class="btn btn-primary"
-        >ADD GRADE</button>
+        >ADD GRADE</button><br>
     <label for="points">Your total points are:</label>
-    <input type="text" id="totalPoints" placeholder="0"> <br><br>
+    <input type="text" id="totalPoints" placeholder="0"> 
     <label for="points">Your total units are:</label>
-    <input type="text" id="totalUnits"><br><br>
+    <input type="text" id="totalUnits"><br>
     <button 
         id="calc" 
         onclick="calcGP()"
