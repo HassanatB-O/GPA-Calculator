@@ -15,7 +15,8 @@ function saveGrades() {
     sumUn += unitArray[i];
     document.getElementById("totalUnits").value = sumUn;
 
-
+    document.getElementById("unit").value = ""
+    
     userGrade = document.getElementById("grades").value
     if  (userGrade == "A" ){
         result = 5 * userUnit;
@@ -36,6 +37,8 @@ function saveGrades() {
         result = 0 * userUnit;
    }
    resultArray.push(result);
+    
+   document.getElementById("grades").value = ""
 
    sumGr = 0;
    for (i = 0; i<resultArray.length; i++)
